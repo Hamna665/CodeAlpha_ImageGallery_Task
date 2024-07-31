@@ -1,1 +1,1 @@
-# CodeAlpha_ImageGallery_Task
+Create a web-based image gallery where users can explore a collection of images. Use HTML and CSS for the gallery's layout and design, and implement JavaScript for navigation and interactive functionalities.

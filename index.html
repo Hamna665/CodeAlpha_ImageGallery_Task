@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-item" onclick="openModal(0)">
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item" onclick="openModal(1)">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item" onclick="openModal(2)">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="caption" id="caption"></div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <div class="thumbnail-container" id="thumbnailContainer">
+      <!-- Thumbnails will be generated here -->
+    </div>
+    <button class="fullscreen-toggle" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
